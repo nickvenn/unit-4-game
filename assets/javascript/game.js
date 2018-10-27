@@ -54,6 +54,7 @@ $(document).ready(function(){
 });
 
 function newGame(){
+    //resets players score and chooses new random number
     PlayerScore = 0;
     RanNum = Math.floor(Math.random() * 120) + 19;
     $("#Ran-Num").html(RanNum);
@@ -62,6 +63,7 @@ function newGame(){
 
 
 function display(){
+    //display 
     $("#score").html(PlayerScore);
     $("#win").html(wins);
     $("#loss").html(losses);
